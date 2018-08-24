@@ -5,4 +5,6 @@ the blockchain.
 
 ---
 
+## Web interface
+
 <img src="https://github.com/mvanaltvorst/hashchain/blob/master/demo.png?raw=true" width=500>
