@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hashchain</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <script src="./app.js"></script>
+</head>
+<body>
+  <h1>Hashchain</h1>
+  <h3>Save your file hashes in the blockchain</h3>
+
+  <br>
+  <h1>Add file to blockchain</h1>
+  <br><label for="file">File:</label><input type="file" id="upload"></input>
+  <br><br><button id="uploadFileButton" onclick="App.uploadFile()">Upload file hash</button>
+  <br><br>
+  <span id="uploadStatus"></span>
+  <br>
+  <h1>Check blockchain for file</h1>
+  <br><label for="file">File:</label><input type="file" id="check"></input>
+  <br><br><button id="checkFileButton" onclick="App.checkFile()">Check file</button>
+  <br><br>
+  <span id="checkStatus"></span>
+  <br><br>
+  <span class="info"><strong>Your ethereum address: </strong><span id="address"></span></span>
+</body>
+</html>
