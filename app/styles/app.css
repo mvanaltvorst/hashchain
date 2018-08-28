@@ -1,7 +1,7 @@
 body {
   margin-left: 25%;
   margin-right: 25%;
-  margin-top: 8%;
+  margin-top: 5%;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -49,4 +49,15 @@ h3 {
 
 .info {
   color: #666;
+}
+
+
+#imgContainer {
+  display: inline-block;
+  margin-left: 75px;
+  height: 80px;
+}
+#imgContainer img {
+  height: 100%;
+  vertical-align: middle;
 }

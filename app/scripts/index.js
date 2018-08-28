@@ -1,6 +1,8 @@
 // Import the page's CSS. Webpack will know what to do with it.
 import '../styles/app.css'
 
+import AxvecoLogo from "../assets/axveco.jpg"
+
 // Import libraries we need.
 import { default as Web3 } from 'web3'
 import { default as contract } from 'truffle-contract'
@@ -110,9 +112,6 @@ const App = {
     }
     this.getFileHash(file, function (hash) {
       FileHashContract.deployed().then(instance => {
-        console.log(instance);
-        console.log(App.account);
-        console.log(hexDigest(hash));
         return instance.hashRegistry(App.account, hexDigest(hash));
       }).then(result => {
         if (result) {
@@ -155,6 +154,11 @@ const App = {
 window.App = App
 
 window.addEventListener('load', function () {
+  var axvecoImage = new Image();
+  axvecoImage.src = AxvecoLogo;
+  console.log(AxvecoLogo);
+  document.getElementById("imgContainer").appendChild(axvecoImage);
+
   // Checking if Web3 has been injected by the browser (Mist/MetaMask)
   if (typeof web3 !== 'undefined') {
     console.warn(
